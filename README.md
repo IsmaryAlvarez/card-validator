@@ -37,21 +37,57 @@ El proyecto fue realizado con las siguientes dependencias NPM:
   - Bootstrap ~v.4.0.0
 
 
-## Instalacion
-1. Clonar repositorio.
-2. Agregar atributo name a los input con los siguientes valores:
-- Input Número de Tarjeta = agregar atributo *name='cn'*
-- Input Fecha de Vencimiento = agregar atributo *name='exp'*
-- Input cvv = agregar atributo *name='cvv'*
-- Input Nombre Completo = agregar atributo *name='name'*
+## Instalación:
+1.- Inicializar tu proyecto desde la terminal utilizando el comando:
+
+`npm init`
+
+2.- Descarga la librería desde el terminal utilizando el comando:
+
+`npm install tdd-validator`
+
+3.- Instalar Browserify de manera global en tu computadora:
+
+`npm install -g browserify`
+
+4.- Crea una carpeta `dist` y una `src` en la raíz de tu proyecto con el archivo `app.js` dentro de cada una, luego ejecuta Browserify con el siguiente comando:
+
+`browserify src/app.js -o dist/app.js`
+
+5.- Enlaza el archivo 'Browserificado' en tu .html:
+
+`<script src="dist/app.js"></script>`
+
+6.- En tu archivo .js principal pega el siguiente código:
+
+`var tddValidator = require('tdd-validator');`
+
+7.- Agregar atributo name a los input con los siguientes valores:
+
+- Input Número de Tarjeta: agregar atributo *name='cn'*
+- Input Fecha de Vencimiento: agregar atributo *name='exp'*
+- Input cvv: agregar atributo *name='cvv'*
+- Input Nombre Completo: agregar atributo *name='name'*
 - Agregar atributo id con los mismos nombres del atributo name. 
 
-+ En el .html 
-...
-<script type="text/javascript" src="index.js"></script>
-...
+`<form class="container" id="myForm">
+    <div class="form-group">
+      <label for="cn">Número de tarjeta</label>
+      <input id="cn" name="cn" />
+    </div>
+    <div class="form-group">
+      <label for="exp">Fecha de vencimiento</label>
+      <input id="exp" name="exp" placeholder="mm/aa" />
+    </div>
+    <div class="form-group">
+      <label for="cvv">CVV</label>
+      <input id="cvv" name="cvv" />
+    </div>
+    <div class="form-group">
+      <label for="name">Nombre completo</label>
+      <input id="name" name="name" />
+    </div>
+    <input type="submit" value="Pagar" />
+  </form>`
 
-+ por NPM 
-...
-
-...
+Y Listo... ya tienes tu validador de tarjetas!!!! 
