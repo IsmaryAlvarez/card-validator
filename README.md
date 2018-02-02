@@ -37,11 +37,21 @@ El proyecto fue realizado con las siguientes dependencias NPM:
   - Bootstrap ~v.4.0.0
 
 
+## Instalacion
+1. Clonar repositorio.
+2. Agregar atributo name a los input con los siguientes valores:
+- Input Número de Tarjeta = agregar atributo *name='cn'*
+- Input Fecha de Vencimiento = agregar atributo *name='exp'*
+- Input cvv = agregar atributo *name='cvv'*
+- Input Nombre Completo = agregar atributo *name='name'*
+- Agregar atributo id con los mismos nombres del atributo name. 
 
-* Clonar repositorio.
-* Agregar atributo name a los input con los siguientes parámetros:
-- cn (Card Number): El número de la tarjeta de crédito
-- exp (Expiry Date): Fecha de expiración
-- cvv (Card Verification Value): Código de validación de 3 dígitos
-- name: Nombre completo como aparece en la tarjeta
-* Formato de fecha debe ser: mm/aa (solicitar en placeholder).
++ En el .html 
+...
+<script type="text/javascript" src="index.js"></script>
+...
+
++ por NPM 
+...
+
+...
