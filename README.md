@@ -59,30 +59,11 @@ El proyecto fue realizado con las siguientes dependencias NPM:
 
 7.- Agregar atributo name a los input con los siguientes valores:
 
-- Input Número de Tarjeta: agregar atributo *name='cn'*
-- Input Fecha de Vencimiento: agregar atributo *name='exp'*
-- Input cvv: agregar atributo *name='cvv'*
-- Input Nombre Completo: agregar atributo *name='name'*
-- Agregar atributo id con los mismos nombres del atributo name. 
+- Input Número de Tarjeta: agregar atributo *name='cn'* *id='cn'*
+- Input Fecha de Vencimiento: agregar atributo *name='exp'* *id='exp'*
+- Input cvv: agregar atributo *name='cvv'* *id='cvv'*
+- Input Nombre Completo: agregar atributo *name='name'* *id='name'*
+- Form: agregar *class='container'* *is='myForm'*
 
-<form class="container" id="myForm">
-    <div class="form-group">
-      <label for="cn">Número de tarjeta</label>
-      <input id="cn" name="cn" />
-    </div>
-    <div class="form-group">
-      <label for="exp">Fecha de vencimiento</label>
-      <input id="exp" name="exp" placeholder="mm/aa" />
-    </div>
-    <div class="form-group">
-      <label for="cvv">CVV</label>
-      <input id="cvv" name="cvv" />
-    </div>
-    <div class="form-group">
-      <label for="name">Nombre completo</label>
-      <input id="name" name="name" />
-    </div>
-    <input type="submit" value="Pagar" />
-  </form>
 
 Y Listo... ya tienes tu validador de tarjetas!!!! 
