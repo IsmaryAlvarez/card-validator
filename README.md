@@ -12,11 +12,6 @@ Crear una librería de JavaScript que permita la validación de una tarjeta de c
 
 ## Consideraciones
 
-* El proyecto está compuesto por una serie de archivos entre los cuales se
-encuentra el archivo base `index.html`, así como también el `index.js`.
-
-## A tener en cuenta:
-
 - Requerimientos Técnicos:
 
 El proyecto fue realizado con las siguientes dependencias NPM:
@@ -70,7 +65,7 @@ El proyecto fue realizado con las siguientes dependencias NPM:
 - Input Nombre Completo: agregar atributo *name='name'*
 - Agregar atributo id con los mismos nombres del atributo name. 
 
-`<form class="container" id="myForm">
+<form class="container" id="myForm">
     <div class="form-group">
       <label for="cn">Número de tarjeta</label>
       <input id="cn" name="cn" />
@@ -88,6 +83,6 @@ El proyecto fue realizado con las siguientes dependencias NPM:
       <input id="name" name="name" />
     </div>
     <input type="submit" value="Pagar" />
-  </form>`
+  </form>
 
 Y Listo... ya tienes tu validador de tarjetas!!!! 
